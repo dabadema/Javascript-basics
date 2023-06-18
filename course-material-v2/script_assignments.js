@@ -263,6 +263,9 @@ switch(language){
 */
 // THE CONDITIONAL (TERNARY) OPERATOR
 
+countryPopulation = prompt ("What is the population in millions of your country?");
+
+countryPopulation >= 33 ? console.log("Portugal's population is above average") : console.log("Portugal's population is below average");
 
     
 
