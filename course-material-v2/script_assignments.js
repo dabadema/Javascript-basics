@@ -278,7 +278,7 @@ describeCountry = function(country, population, capitalCity) {
 }
 
 input1 = describeCountry("Spain", 52, "Madrid");
-input2 = describeCountry("France", 52, "Paris");
+input2 = describeCountry("France", 75, "Paris");
 input3 = describeCountry("Portugal", 22, "Lisboa");
 
 console.log(input1, input2, input3);
