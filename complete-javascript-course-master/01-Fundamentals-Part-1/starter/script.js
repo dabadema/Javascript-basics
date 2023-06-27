@@ -241,4 +241,91 @@ if (hasDriverLicense && hasGoodVision && !isTired) {
     console.log(`Someone else shoul drive...`);
 }
 */
-// THE SWITCH STATEMENT 
+// THE SWITCH STATEMENT
+/* 
+const day = "monday";
+
+switch(day) {
+    case "monday": // day === "monday"
+        console.log("Plan my course structure");
+        console.log("Go to coding meet up");
+        break;
+    case "tuesday":
+        console.log("Prepare theory videos");
+        break;
+    case "wednesday":
+    case "thursday":
+        console.log("Write code examples");
+        break;
+    case "friday":
+        console.log("Record videos");
+        break;
+    case "saturday":
+    case "sunday":
+        console.log("Write code examples");
+        break;
+    default:
+        console.log("Not a valid day!");
+}
+
+if (day === "monday") {
+    console.log("Plan my course structure");
+    console.log("Go to coding meet up");
+} else if (day === "tuesday") {
+    console.log("Prepare theory videos");
+} else if (day === "wednesday" || day === "thursday") {
+    console.log("Write code examples");
+} else if (day === "friday") {
+    console.log("Record videos");
+} else if (day === "saturday" || day === "sunday") {
+    console.log("Enjoy the weekend :D");
+} else {
+    console.log("Not a valid day");
+}
+
+// STATEMENTS AND EXPRESSIONS
+3 + 4 
+1991
+true && false && !false
+
+if (23>10) {
+    const str = '23 is bigger';
+}
+
+const me = 'Jonas';
+console.log(`I'm ${2037 - 1991} years old, ${me}`);
+
+// THE CONDITIONAL (TERNARY) OPERATOR
+
+const age = 23;
+age >= 18 ? console.log(`I'd like to drink wine`):
+console.log(`I'd like to drink water`);
+
+const drink = age >= 18 ? `wine` : `water`;
+console.log(drink);
+
+
+let drink2;  // This is the same expression with conditionals
+if(age >=18) {
+    drink2 = `wine` ;
+} else {
+    drink2 = `water`;
+}
+console.log(drink2);
+
+console.log( `I like to drink ${age >= 18 ? `wine` : `water`}`);
+
+CODE CHALLENGE 4 
+
+(My solution)
+bill = prompt(`Introduce the bill's value`);
+let tip ;
+let total ;
+50 >= bill <= 300 ? console.log(`The bill was ${bill}, the tip was ${ tip = bill*0.15 } and the total value ${ parseInt(bill)+parseFloat(tip) }`) : console.log(`The bill was ${bill}, The tip was ${ tip = bill*0.20 } and the total value ${ parseInt(bill)+parseFloat(tip) }`) ;
+ 
+ (Cleaner solution)
+const bill = 275;
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
+
+ */
