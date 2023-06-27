@@ -266,9 +266,23 @@ switch(language){
 countryPopulation = prompt ("What is the population in millions of your country?");
 
 countryPopulation >= 33 ? console.log("Portugal's population is above average") : console.log("Portugal's population is below average");
-*/
-    
 
+
+####################################################################################################
+################################## JavaScript Fundamentals Part 2 ##################################
+
+// FUNCTIONS 
+
+describeCountry = function(country, population, capitalCity) {
+    console.log(`${country} has ${population} million people and its capital city is ${capitalCity}`);
+}
+
+input1 = describeCountry("Spain", 52, "Madrid");
+input2 = describeCountry("France", 52, "Paris");
+input3 = describeCountry("Portugal", 22, "Lisboa");
+
+console.log(input1, input2, input3);
+*/
 
 
 
