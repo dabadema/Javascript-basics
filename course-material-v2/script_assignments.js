@@ -317,7 +317,21 @@ const percFrance3 = percentageOfWorld3(72);
 const percUsa3 = percentageOfWorld3(331);
 
 console.log(percSpain3, percFrance3, percUsa3);
-*/
+
 // FUNCTIONS CALLING OTHER FUNCTIONS
 
+const describePopulation = function(country, population) {
 
+    const percPopulation = percentageOfWorld1(population);
+    console.log(`${country} has ${population} million people, which is about ${percPopulation} of the world. `)
+}
+
+const percentageOfWorld1 = function(population) {
+    return (population/7900) * 100 ; 
+}
+
+describePopulation(`China`, 1441);
+describePopulation(`Spain`, 56);
+describePopulation(`USA`, 331);
+*/
+// INTRODUCTION TO ARRAYS
