@@ -282,8 +282,42 @@ input2 = describeCountry("France", 75, "Paris");
 input3 = describeCountry("Portugal", 22, "Lisboa");
 
 console.log(input1, input2, input3);
+
+// FUNCTION DECLARATIONS VS EXPRESSIONS
+
+// This is a function declaration
+function percentageOfWorld1(population) {
+    return (population/7900) * 100 ; 
+}
+
+const percSpain1 = percentageOfWorld1(56);
+const percFrance1 = percentageOfWorld1(72);
+const percUsa1 = percentageOfWorld1(331);
+
+console.log(percSpain1, percFrance1, percUsa1);
+
+// This is a function expression because is stored in a variable
+const percentageOfWorld2 = function (population) {
+    return (population/7900) * 100 ; 
+}
+
+const percSpain2 = percentageOfWorld2(56);
+const percFrance2 = percentageOfWorld2(72);
+const percUsa2 = percentageOfWorld2(331);
+
+console.log(percSpain2, percFrance2, percUsa2);
+
+// ARROW FUNCTIONS
+
+// This is a function expression because is stored in a variable
+const percentageOfWorld3 = population => (population/7900) * 100 ;
+
+const percSpain3 = percentageOfWorld3(56);
+const percFrance3 = percentageOfWorld3(72);
+const percUsa3 = percentageOfWorld3(331);
+
+console.log(percSpain3, percFrance3, percUsa3);
 */
-
-
+// FUNCTIONS CALLING OTHER FUNCTIONS
 
 
