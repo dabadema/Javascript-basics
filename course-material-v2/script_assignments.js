@@ -334,7 +334,7 @@ const percentageOfWorld1 = function(population) {
 describePopulation(`China`, 1441);
 describePopulation(`Spain`, 56);
 describePopulation(`USA`, 331);
-*/
+
 // INTRODUCTION TO ARRAYS
 
 const populations = [56, 22, 331, 1441];
@@ -352,3 +352,24 @@ function percentageOfWorld1(population) {
 }
 
 console.log(percentages);
+*/
+// BASIC ARRAY OPERATIONS (METHODS)
+
+const neighbours = [`France`, `Portugal`, `Morocco`, `Andorra`];
+
+neighbours.push(`Utopia`);
+console.log(neighbours);
+
+neighbours.pop();
+console.log(neighbours);
+
+if (neighbours.includes(`Germany`)) {
+} else {
+    console.log(`Probably not an central European country`);
+}
+
+const changeOfCountry = neighbours.indexOf(`Portugal`);
+console.log(changeOfCountry);
+
+neighbours[1] = `Kingdom of Portugal`;
+console.log(neighbours);
