@@ -336,3 +336,19 @@ describePopulation(`Spain`, 56);
 describePopulation(`USA`, 331);
 */
 // INTRODUCTION TO ARRAYS
+
+const populations = [56, 22, 331, 1441];
+
+if (populations.length == 4) {
+    console.log(`Sure, the array has 4 elements`);
+} else {
+    console.log(`No, the array does not have 4 elements`);
+}
+
+const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
+
+function percentageOfWorld1(population) {
+    return (population/7900) * 100 ; 
+}
+
+console.log(percentages);
