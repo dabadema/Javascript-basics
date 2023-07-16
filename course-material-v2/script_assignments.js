@@ -385,4 +385,19 @@ const myCountry = {
 }
 console.log(myCountry);
 */
-//
+// DOT VS. BRACKETS NOTATION
+/*
+const myCountry = {
+    country: `Spain`,
+    capital: `Madrid`,
+    language: `spanish`,
+    population: 56,
+    neighbours: [`Portugal`, `Morocco`,`France`]
+}
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+
+console.log(`${myCountry.country} has ${myCountry.population + 2} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+
+console.log(`${myCountry.country} has ${myCountry[`population`] - 2} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+*/
+// OBJECT METHODS
