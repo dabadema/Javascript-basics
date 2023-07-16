@@ -246,6 +246,7 @@ Use the function type you like the most. Test the function using a bill value of
 
 TEST DATA: 125, 555, and 44.
 */
+/*
 const calcTip = function(billValue){
   if (50 < billValue && billValue< 300){
     return billValue*0.15;
@@ -267,10 +268,31 @@ const tipBill3 = calcTip(bills[2]);
 const tips = [tipBill1, tipBill2, tipBill3];
 console.log(tips);
 
-/* Solution from the professor is simpler and having less variables
+// Solution from the professor is simpler and having less variables
 
 const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2]);
-console.log(tips); */
+console.log(tips); 
 
 const totals = [bills[0]+tips[0], bills[1]+tips[1], bills[2]+tips[2]];
 console.log(totals);
+*/
+///////////////////////////////////////
+// Introduction to objects
+/*
+const jonasArray = [
+  'Jonas',
+  'Schmedtmann',
+  2037 - 1991.,
+  'teacher',
+  ['Michael', 'Peter', 'Steven']
+];
+
+const jonas = {
+  firstName: 'Jonas',
+  lastName: 'Schmedtmann',
+  age: 2037 - 1991,
+  job: 'teacher',
+  friends: [`Michael`, `Peter`, `Steven`]
+};
+console.log(jonas);
+*/

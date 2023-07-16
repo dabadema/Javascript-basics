@@ -374,3 +374,15 @@ console.log(changeOfCountry);
 neighbours[1] = `Kingdom of Portugal`;
 console.log(neighbours);
 */
+// INTRODUCTION TO OBJECTS
+/*
+const myCountry = {
+    country: `Spain`,
+    capital: `Madrid`,
+    language: `Spanish`,
+    population: 56,
+    neighbours: [`Portugal`, `Morocco`,`France`]
+}
+console.log(myCountry);
+*/
+//
