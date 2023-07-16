@@ -352,7 +352,7 @@ function percentageOfWorld1(population) {
 }
 
 console.log(percentages);
-*/
+
 // BASIC ARRAY OPERATIONS (METHODS)
 
 const neighbours = [`France`, `Portugal`, `Morocco`, `Andorra`];
@@ -373,3 +373,4 @@ console.log(changeOfCountry);
 
 neighbours[1] = `Kingdom of Portugal`;
 console.log(neighbours);
+*/
