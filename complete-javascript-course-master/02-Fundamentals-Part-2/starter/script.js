@@ -336,3 +336,29 @@ console.log(jonas[`firstName`] + ` has ` + jonas.friends.length + ` friends, and
 */
 ///////////////////////////////////////
 // Object Methods
+
+const jonas = {
+  firstName: 'Jonas',
+  lastName: 'Schmedtmann',
+  birthYear: 1991,
+  job: 'teacher',
+  friends: [`Michael`, `Peter`, `Steven`],
+  hasDriversLicense: true,
+
+  // calcAge:function (birthYear) {
+  //   return 2037 - birthYear;
+  // }
+
+  calcAge:function () {
+    // console.log(this);
+    return 2037 - this.birthYear;
+  }
+};
+
+console.log(jonas.calcAge());
+
+console.log(jonas.calcAge());
+console.log(jonas.calcAge());
+console.log(jonas.calcAge());
+
+// console.log(jonas[`calcAge`](1991));
