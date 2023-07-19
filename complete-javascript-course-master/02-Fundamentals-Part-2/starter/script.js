@@ -349,16 +349,30 @@ const jonas = {
   //   return 2037 - birthYear;
   // }
 
+  // calcAge:function () {
+  //   // console.log(this);
+  //   return 2037 - this.birthYear;
+  // }
+
+  // This is the most effective for creating the parameter and directly store into the object
   calcAge:function () {
-    // console.log(this);
-    return 2037 - this.birthYear;
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+  
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()}-years old ${this.job}, and he has ${this.hasDriversLicense ? `a` : `no`} driver's license.`
   }
 };
 
 console.log(jonas.calcAge());
 
-console.log(jonas.calcAge());
-console.log(jonas.calcAge());
-console.log(jonas.calcAge());
+console.log(jonas.age);
+console.log(jonas.age);
+console.log(jonas.age);
 
-// console.log(jonas[`calcAge`](1991));
+// Challenge
+// "Jonas is a 46-year old teacher, and it has a driver's license" 
+// This is done inside the object with the method getSummary
+
+console.log(jonas.getSummary());
