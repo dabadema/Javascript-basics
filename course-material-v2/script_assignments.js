@@ -401,3 +401,33 @@ console.log(`${myCountry.country} has ${myCountry.population + 2} million ${myCo
 console.log(`${myCountry.country} has ${myCountry[`population`] - 2} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
 */
 // OBJECT METHODS
+/*
+const myCountry = {
+    country: `Spain`,
+    capital: `Madrid`,
+    language: `spanish`,
+    population: 56,
+    neighbours: [`Portugal`, `Morocco`,`France`],
+    describe:function () {
+        console.log(`${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`);
+    },
+
+    checkIsland:function () {
+        this.isIsland = this.neighbours.length === 0 ? true : false; 
+        return this.isIsland;
+
+        // This is the simpler solution proposed by the teacher
+        // this.isIsland = !Boolean(this.neighbours.length);
+        // return this.isIsland;
+    },
+
+    describeIsland:function () {
+        console.log(`${this.country} has ${this.population} million ${this.language}-speaking people, ${this.isIsland ? `no` : this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`);
+    },
+}
+
+console.log(myCountry.describe());
+
+console.log(myCountry.checkIsland());
+console.log(myCountry.describeIsland());
+*/
