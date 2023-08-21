@@ -419,3 +419,16 @@ john.calcBMI();
 console.log(mark.bmi, john.bmi);
 console.log(`${mark.bmi > john.bmi ? mark.fullName : john.fullName}´s BMI (${mark.bmi > john.bmi ? mark.bmi : john.bmi}) is higher than ${mark.bmi > john.bmi ? john.fullName : mark.fullName}´s (${mark.bmi > john.bmi ? john.bmi : mark.bmi}) ! `);
 */
+
+// ITERATION: THE FOR LOOP
+/*
+console.log('Lifting weights repetition 1');
+console.log('Lifting weights repetition 2');
+
+
+// For loop kees running while condition in the middle is true
+for(let rep=1; rep <= 10; rep++){
+  console.log(`Lifting weights repetition ${rep}`);
+}
+*/
+
