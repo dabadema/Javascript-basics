@@ -431,3 +431,11 @@ console.log(myCountry.describe());
 console.log(myCountry.checkIsland());
 console.log(myCountry.describeIsland());
 */
+
+// ITERATION: THE FOR LOOP
+/*
+for(let vot = 1; vot <= 50; vot++){
+    console.log(`Voter number ${vot} is currently voting`);
+}
+*/
+
