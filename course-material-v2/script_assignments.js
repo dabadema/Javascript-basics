@@ -439,3 +439,25 @@ for(let vot = 1; vot <= 50; vot++){
 }
 */
 
+///////////////////////////////////////////
+// LOOPING ARRAYS, BREAKING AND CONTINUING
+
+const populations = [56, 22, 331, 1441];
+
+function percentageOfWorld1(population) {
+    return (population/7900) * 100 ; 
+}
+
+const percentages2 = [];
+for( i = 0 ; i < populations.length ; i++ ) {
+    percentages2.push(percentageOfWorld1(populations[i]));
+}
+console.log(percentages2);
+
+const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
+function percentageOfWorld1(population) {
+    return (population/7900) * 100 ; 
+}
+console.log(percentages);
+// Checked that percentages2 and percentages has the same result with different script!
+
