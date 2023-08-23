@@ -441,7 +441,7 @@ for(let vot = 1; vot <= 50; vot++){
 
 ///////////////////////////////////////////
 // LOOPING ARRAYS, BREAKING AND CONTINUING
-
+/*
 const populations = [56, 22, 331, 1441];
 
 function percentageOfWorld1(population) {
@@ -460,4 +460,25 @@ function percentageOfWorld1(population) {
 }
 console.log(percentages);
 // Checked that percentages2 and percentages has the same result with different script!
+*/
 
+///////////////////////////////////////////
+// LOOPING BACKWARDS AND LOOPS IN LOOPS
+/*
+const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+
+// for( i = 0 ; i < listOfNeighbours.length ; i++ ) {
+//     console.log(`Neighbour: ${listOfNeighbours[i][0]}`)
+    
+//     for (i = 0 ; i < listOfNeighbours.length ; i++ ) {
+//     if(listOfNeighbours[0][1] ==! 0) continue;
+//     console.log(`Neighbour: ${listOfNeighbours[i][i+1]}`)
+//     }
+// }
+
+for (let i = 0; i < listOfNeighbours.length; i++) {
+    for (let y = 0; y < listOfNeighbours[i].length; y++){
+        console.log(`Neighbour: ${listOfNeighbours[i][y]}`);    
+    }
+}
+*/
