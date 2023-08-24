@@ -467,6 +467,7 @@ console.log(percentages);
 /*
 const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
 
+// This is the crap attempt from my end.... after this comment is typed the BEST solution
 // for( i = 0 ; i < listOfNeighbours.length ; i++ ) {
 //     console.log(`Neighbour: ${listOfNeighbours[i][0]}`)
     
