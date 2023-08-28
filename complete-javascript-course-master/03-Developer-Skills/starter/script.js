@@ -8,3 +8,5 @@ if (x === 23) console.log(23);
 const calcAge = birthYear => 2037 - birthYear;
 
 // BUG OK FIXME TO_DO
+
+console.log(calcAge(1966));
