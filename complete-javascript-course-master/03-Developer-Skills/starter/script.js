@@ -156,7 +156,7 @@ TEST DATA 2: [12, 5, -5, 0, 4]
 // - Create a function
 // - That function must contain a loop which reads the array 1 by 1
 // - Every iteration must create part of the string but just one single print out
-
+/*
 const data1 = [17, 21, 23];
 const data2 = [12, 5, -5, 0, 4];
 
@@ -170,3 +170,4 @@ const printForecast = function (arr) {
 
 printForecast(data1);
 printForecast(data2);
+*/
