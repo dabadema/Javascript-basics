@@ -131,3 +131,42 @@ const amplitudeBug = calcTempAmplitudeBug([3, 5, 1], [9, 4, 5]);
 // IDENTIFY THE BUG
 console.log(amplitudeBug);
 */
+
+///////////////////////////////////////
+// Coding Challenge #1
+
+/*
+Given an array of forecasted maximum temperatures, the thermometer displays a string with these temperatures.
+
+Example: [17, 21, 23] will print "... 17ºC in 1 days ... 21ºC in 2 days ... 23ºC in 3 days ..."
+
+Create a function 'printForecast' which takes in an array 'arr' and logs a string like the above to the console.
+
+Use the problem-solving framework: Understand the problem and break it up into sub-problems!
+
+TEST DATA 1: [17, 21, 23]
+TEST DATA 2: [12, 5, -5, 0, 4]
+*/
+
+// 1) Understanding the problem
+// - We need to show a string with the forecasted weather --(Array transformed to string, separated by ...)
+// - Should print to the console a single string with all the forecasted temperatures --(What is the X days? array.index + 1)
+
+// 2) Breaking up into sub-problems
+// - Create a function
+// - That function must contain a loop which reads the array 1 by 1
+// - Every iteration must create part of the string but just one single print out
+
+const data1 = [17, 21, 23];
+const data2 = [12, 5, -5, 0, 4];
+
+const printForecast = function (arr) {
+  let forecast = '';
+  for (let i = 0; i < arr.length; i++) {
+    forecast += `${arr[i]}ºC in ${i + 1} days ...`; // That is equal to forecast = forecast + `${arr[i]}ºC in ${i + 1} days ...`;
+  }
+  console.log(`... ` + forecast);
+};
+
+printForecast(data1);
+printForecast(data2);
