@@ -13,15 +13,34 @@ const btnNewGameEl = document.querySelector('.btn--new');
 const btnDiceRollsEl = document.querySelector('.btn--roll');
 const btnHoldScoreEl = document.querySelector('.btn--hold');
 
-// Starting conditionstotalScoreP0El
+// Starting conditions
 totalScoreP0El.textContent = 0;
 totalScoreP1El.textContent = 0;
 diceEl.classList.add('hidden');
 
-const scores = [0, 0];
-let currentScore = 0;
-let activePlayer = 0;
-let playing = true;
+let scores, currentScore, activePlayer, playing;
+
+// Reset the game functionality and initialization
+const resetGame = function () {
+  // Set all values to 0 again
+  scores = [0, 0];
+  currentScore = 0;
+  activePlayer = 0;
+  playing = true;
+
+  totalScoreP0El.textContent = 0;
+  totalScoreP1El.textContent = 0;
+  currentScoreP0El.textContent = 0;
+  currentScoreP1El.textContent = 0;
+
+  diceEl.classList.add('hidden');
+  player0El.classList.remove('player--winner');
+  player1El.classList.remove('player--winner', 'player--active');
+  player0El.classList.add('player--active');
+  player1El.classList.add('player');
+};
+
+resetGame();
 
 const switchPlayer = function () {
   document.getElementById(`current--${activePlayer}`).textContent = 0;
@@ -67,7 +86,7 @@ const holdButton = function () {
     document.getElementById(`score--${activePlayer}`).textContent =
       scores[activePlayer];
     // 2. Check if player's score is >= 100
-    if (scores[activePlayer] >= 20) {
+    if (scores[activePlayer] >= 100) {
       // Finish the game
       playing = false;
       document
@@ -87,3 +106,5 @@ const holdButton = function () {
 btnHoldScoreEl.addEventListener('click', holdButton);
 
 // Reset the game functionality
+
+btnNewGameEl.addEventListener('click', resetGame);
